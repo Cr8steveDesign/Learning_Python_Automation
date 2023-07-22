@@ -5,9 +5,9 @@ age = 55
 
 #Receiving input
 # print('What is your name?')
-full_name = input("Tell me your name")
+#full_name = input("Tell me your name")
 
-print(full_name)
+# print(full_name)
 
 
 # Multi-line strings done with three ''' Enter text here in multiline'''
@@ -51,4 +51,8 @@ print(length_details)
 
 #Operator Precedence - Nearly BODMAS - PEMDAS
 #Parentheses Exponentiation Multiplication Division Addition Subtraction
+
+
+# You can slice a variable within the print statement
+print(skills[:8])
 
