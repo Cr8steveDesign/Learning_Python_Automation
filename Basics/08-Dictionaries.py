@@ -1,3 +1,4 @@
+import re
 # A dictionary in python is a data structure with key value pairs. There is no other in which the members are, unlike a List or Tuple. Its values and key members can be modified or easily created. 
 
 # Initialized with a curly brace with members/keys entered as a string, and values separated from members with a colon :

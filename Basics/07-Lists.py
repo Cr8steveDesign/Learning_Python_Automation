@@ -20,4 +20,26 @@ mylist = [13, 15, 8, 5]
 print(mylist)
 
 
-        
+#Basic of list comrepehsion Technically puts x from the first loop if it meets the second condition
+
+first_num = [1, 2, 34, 5, 6, 2, 3, 5, 9, 6, 4, 1, 8, 5, 3, 22, 789]
+second_num = [3, 4, 3, 78, 4, 2, 5, 5, 67, 88, 0, -0, 7, 5, 4, 23, 54, 65, 789]
+
+third_num = [x for x in first_num]
+
+for x in second_num:
+    third_num.append(x)
+
+print(third_num)
+
+# Combining dictionaries to take count:
+
+num_dict = dict()
+
+for x in third_num:
+    num_dict[x] = num_dict.get(x, 0) + 1
+    
+
+for k, v in num_dict.items():
+    print(f"The number {k}\tappears {v} times")
+
