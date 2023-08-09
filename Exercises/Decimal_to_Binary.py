@@ -1,12 +1,8 @@
 # A Function that receives input from the user and converts it to
 # the binary representation of that number
 
-
 # Retrieve number from user and validate
 def get_decimal():
-
-	num_convert = 0
-
 	while True:
 		user_input = input("Please enter the positive integer: ")
 		continue_choice = "YES"
@@ -30,16 +26,17 @@ def get_decimal():
 
 # Define function to handle conversion
 
-def binary_convert(decimal):
+
+def binary_convert(decimal_arg):
 
 	binary_conv = []
 
-	if decimal == 0:
-		return (decimal)
+	if decimal_arg == 0:
+		return decimal_arg
 
-	while decimal > 0:
-		binary_conv.insert(0, int(decimal % 2))
-		decimal //= 2
+	while decimal_arg > 0:
+		binary_conv.insert(0, int(decimal_arg % 2))
+		decimal_arg //= 2
 
 	final_str = "".join(str(el) for el in binary_conv)
 

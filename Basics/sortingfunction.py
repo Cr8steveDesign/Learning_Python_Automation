@@ -8,6 +8,6 @@ def qrsort(a, b):
         return b
     
 
-max = qrsort(15, 55)
+max_var = qrsort(15, 55)
 
-print(max)
+print(max_var)

@@ -23,9 +23,17 @@
 
 import requests
 
-url = "https://www.w3resource.com/python-exercises/python-basic-exercises.php"
+response = requests.get(
+	'https://api.github.com/search/repositories',
+	params={'q': 'requests+language:python'},
+	headers={'Accept': 'application/vnd.github.v3.text-match+json'},
+)
 
-response = requests.get(url)
-# print(response.content.decode())
+# View the new `text-matches` array which provides information
+# about your search term within the results
+json_response = response.json()
 
-print(response.text)
+total_count = json_response.get('total_count', None)
+
+print(total_count)
+
